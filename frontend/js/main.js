@@ -34,7 +34,7 @@ function reset(){ //reset bank roll
         document.querySelector("#main").innerHTML=0
 
     try { //getting deck object from server
-      const res = await fetch("http://localhost:8000/api");
+      const res = await fetch("https://pokerbackend.onrender.com/api");
       const data = await res.json();
       deck= data;  
       console.log(deck);
